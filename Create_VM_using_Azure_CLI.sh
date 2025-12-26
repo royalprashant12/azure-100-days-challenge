@@ -42,4 +42,4 @@ az vm get-instance-view \
   --query "instanceView.statuses[?code=='PowerState/running'].displayStatus" \
   --output table
 
-echo "----------------------------------------------------"
+echo "---------------------------------------------------"
