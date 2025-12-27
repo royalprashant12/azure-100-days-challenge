@@ -13,12 +13,12 @@ Welcome to my **100 Days of Azure Challenge**! This repository is a dedicated lo
 
 ## 📅 Daily Progress Tracker
 
-|  Day   | Task Title                  | Key Services Used               |     Documentation     |
-| :----: | :-------------------------- | :------------------------------ | :-------------------: |
-| **01** | SSH Key Creation & Setup    | `ssh-keygen`, Linux             | [View Notes](./Day01) |
-| **02** | Create a VM via Portal      | Azure VM, VNet, Security Groups | [View Notes](./Day02) |
-| **03** | VM Deployment via Azure CLI | Azure CLI, Bash, Ubuntu 22.04   | [View Notes](./Day03) |
-| **04** | _Upcoming..._               | --                              |          --           |
+|  Day   | Task Title                    | Key Services Used               |     Documentation     |
+| :----: | :---------------------------- | :------------------------------ | :-------------------: |
+| **01** | SSH Key Creation & Setup      | `ssh-keygen`, Linux             | [View Notes](./Day01) |
+| **02** | Create a VM via Portal        | Azure VM, VNet, Security Groups | [View Notes](./Day02) |
+| **03** | VM Deployment via Azure CLI   | Azure CLI, Bash, Ubuntu 22.04   | [View Notes](./Day03) |
+| **04** | Create Virtual Network (VNet) | Azure Networking, Subnets       | [View Notes](./Day04) |
 
 ---
 
@@ -52,6 +52,19 @@ Welcome to my **100 Days of Azure Challenge**! This repository is a dedicated lo
     --os-disk-size-gb 30
   ```
 - **Outcome:** Successfully deployed a 30GB Ubuntu VM using a single script.
+
+### Day 4: Creating a Virtual Network (VNet) 🌐
+
+- **Objective:** Build the networking foundation for cloud resources.
+- **Key Command:**
+  ```bash
+  az network vnet create \
+    --resource-group myRG \
+    --name MyVNet \
+    --address-prefix 10.0.0.0/16 \
+    --subnet-name MySubnet \
+    --subnet-prefix 10.0.1.0/24
+  ```
 
 ---
 
